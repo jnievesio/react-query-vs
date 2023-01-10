@@ -9,13 +9,13 @@ export default function Home() {
 
     return (
         <div>
-            <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md dark:text-white">
-                <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10 text-center">
+            <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10 text-center text-black">
                     <h3>Bienvenido</h3>
                     <button
                         className={` ${
                             isLoading && "disabled"
-                        } bg-gray-300 dark:bg-white h-[50px] w-[100px] rounded hover:bg-gray-200`}
+                        } bg-gray-300 h-[50px] w-[100px] rounded hover:bg-gray-200`}
                         onClick={() => {
                             logout();
                             navigate("/auth");
