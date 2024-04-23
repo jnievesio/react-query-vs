@@ -1,0 +1,12 @@
+name: Procesos CICD
+on:
+  push:
+    branches:
+      - main
+jobs:
+  hello_world:
+    #en que sistema operativo va a trabajar
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Nombre del paso
+        run: echo "Hello world"
